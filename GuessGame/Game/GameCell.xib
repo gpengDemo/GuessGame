@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GameCell" customModule="GuessGame" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="314"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="314"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxf-HU-6VO">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="314"/>
+                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                        <state key="normal" image="corn" backgroundImage="card_2"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kxf-HU-6VO" secondAttribute="trailing" id="fK6-mq-Rto"/>
+                <constraint firstItem="Kxf-HU-6VO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="r3n-8M-Xuw"/>
+                <constraint firstItem="Kxf-HU-6VO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vla-ji-mM6"/>
+                <constraint firstAttribute="bottom" secondItem="Kxf-HU-6VO" secondAttribute="bottom" id="wm6-fh-hJ2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="290" height="314"/>
+            <connections>
+                <outlet property="picBtn" destination="Kxf-HU-6VO" id="Q5Z-8g-rK6"/>
+            </connections>
+            <point key="canvasLocation" x="-186.95652173913044" y="147.99107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card_2" width="177" height="145"/>
+        <image name="corn" width="181" height="129"/>
+    </resources>
+</document>
